@@ -61,7 +61,7 @@ Resources:
       Cache:
         Type: NO_CACHE
       Environment:
-        Type: WINDOWS_CONTAINER
+        Type: WINDOWS_SERVER_2019_CONTAINER
         Image: !Sub ${AWS::AccountId}.dkr.ecr.${AWS::Region}.amazonaws.com/${DotNetECR}:latest
         ComputeType: BUILD_GENERAL1_MEDIUM
         PrivilegedMode: false
